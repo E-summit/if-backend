@@ -113,7 +113,7 @@ Router.post(
       res.json({success,authtoken});
 
     }catch(error){
-      console.error(err.message);
+      console.error(error.message);
       res.status(500).json({ error: 'Server error, please try again later.' });
     }
   }
